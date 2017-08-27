@@ -1,0 +1,4 @@
+language: csharp
+solution: ConsoleApp1.sln
+install:
+  - nuget restore ConsoleApp1.sln
