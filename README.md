@@ -1,5 +1,6 @@
 # Keeper
 
+[![Build Status](https://travis-ci.org/shimanov/Keeper.svg?branch=master)](https://travis-ci.org/shimanov/Keeper)
 
 Утилита для перезапуска служб и выполнения sql скриптов
 -----------------------
