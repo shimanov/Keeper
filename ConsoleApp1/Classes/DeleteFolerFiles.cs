@@ -16,7 +16,7 @@ namespace ConsoleApp1
         {
             string deleteExportPath = @"C:\GMMQ\Export";
             DeleteFolder(deleteExportPath);
-            Console.WriteLine("Каталог Export очищен");
+            Console.WriteLine(DateTime.Now.ToShortDateString() + "Каталог Export очищен");
         }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace ConsoleApp1
         {
             string deleteExportPath = @"C:\GMMQ\Import";
             DeleteFolder(deleteExportPath);
-            Console.WriteLine("Каталог Import очищен");
+            Console.WriteLine(DateTime.Now.ToShortDateString() + "Каталог Import очищен");
         }
 
         static void DeleteFolder(string folder)

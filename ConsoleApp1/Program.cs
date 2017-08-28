@@ -37,7 +37,7 @@ namespace ConsoleApp1
                 script.ScriptExport();
 
                 //спим 5 минут
-                Console.WriteLine("Ждем 5 минут");
+                Console.WriteLine(DateTime.Now.ToShortDateString() + "Ждем 5 минут");
                 Logger.Log.Info("Ждем 5 минут");
                 Thread.Sleep(300000);
 
@@ -89,9 +89,10 @@ namespace ConsoleApp1
             Console.WriteLine("*     работоспособности транспорта в ОПС         *");
             Console.WriteLine("*     Шиманов Дмитрий Анатольевич                *");
             Console.WriteLine("*     Email: Dmitriy.Shimanov@russianpost.ru     *");
+            Console.WriteLine("*     LICENSE: Apache 2.0                        *");
             Console.WriteLine("*                                                *");
             Console.WriteLine(new string('*', 50));
-            Console.Title = "Keeper v.2.1.3.4";
+            Console.Title = "Keeper v.2.1.3.5";
             //Иницилизация log4net
             Logger.InitLogger();
 
