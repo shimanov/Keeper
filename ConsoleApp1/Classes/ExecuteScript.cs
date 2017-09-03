@@ -44,14 +44,14 @@ namespace ConsoleApp1
             try
             {
                 connection.Open();
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Успешно подключились к БД " + NamePc() + "для выполнения скрипта ReplicaExport");
+                Console.WriteLine(DateTime.Now + " Успешно подключились к БД " + NamePc() + "для выполнения скрипта ReplicaExport");
                 Logger.Log.Info("Успешно подключились к БД " + NamePc() + "для выполнения скрипта ReplicaExport");
 
                 sqlCommand.CommandTimeout = 240;
                 sqlCommand.ExecuteNonQuery();
                 connection.Close();
 
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Успешно выполнил скрипт ReplicaExport на БД " + NamePc() + "соединение закрыл");
+                Console.WriteLine(DateTime.Now + " Успешно выполнил скрипт ReplicaExport на БД " + NamePc() + "соединение закрыл");
                 Logger.Log.Info("Успешно выполнил скрипт ReplicaExport на БД " + NamePc() + "соединение закрыл");
             }
             catch (Exception exception)
@@ -85,7 +85,7 @@ namespace ConsoleApp1
                 sqlCommand.CommandTimeout = 240;
                 sqlCommand.ExecuteNonQuery();
 
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Успешно подключились к БД " + NamePc() + "для выполнения скрипта ReplicaImport");
+                Console.WriteLine(DateTime.Now + " Успешно подключились к БД " + NamePc() + "для выполнения скрипта ReplicaImport");
                 Logger.Log.Info("Успешно выполнил скрипт ReplicaImport на БД " + NamePc() + "соединение закрыл");
             }
             catch (Exception exception)

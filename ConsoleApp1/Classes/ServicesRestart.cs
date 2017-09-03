@@ -18,13 +18,13 @@ namespace ConsoleApp1
                 gmmq.WaitForStatus(ServiceControllerStatus.Stopped);
 
                 Logger.Log.Info("Останавливаем службу GMMQ");
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Останавливаем службу GMMQ");
+                Console.WriteLine(DateTime.Now + " Останавливаем службу GMMQ");
                 
                 gmmq.Start();
                 gmmq.WaitForStatus(ServiceControllerStatus.Running);
 
                 Logger.Log.Info("Запускаем службу GMMQ");
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Запускаем службу GMMQ");
+                Console.WriteLine(DateTime.Now + " Запускаем службу GMMQ");
             }
             else
             {
@@ -32,7 +32,7 @@ namespace ConsoleApp1
                 gmmq.WaitForStatus(ServiceControllerStatus.Running);
 
                 Logger.Log.Info("Служба GMMQ была остановлена. Запустил службу...");
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Служба GMMQ была остановлена. Запустил службу...");
+                Console.WriteLine(DateTime.Now + " Служба GMMQ была остановлена. Запустил службу...");
             }
         }
 
@@ -48,13 +48,13 @@ namespace ConsoleApp1
                 sheduler.WaitForStatus(ServiceControllerStatus.Stopped);
 
                 Logger.Log.Info("Останавливаем службу GM_SchedulerSvc");
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Останавливаем службу GM_SchedulerSvc");
+                Console.WriteLine(DateTime.Now + " Останавливаем службу GM_SchedulerSvc");
 
                 sheduler.Start();
                 sheduler.WaitForStatus(ServiceControllerStatus.Running);
 
                 Logger.Log.Info("Запускаем службу GM_SchedulerSvc");
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Запускаем службу GM_SchedulerSvc");
+                Console.WriteLine(DateTime.Now + " Запускаем службу GM_SchedulerSvc");
             }
             else
             {
@@ -62,7 +62,7 @@ namespace ConsoleApp1
                 sheduler.WaitForStatus(ServiceControllerStatus.Running);
 
                 Logger.Log.Info("Служба GM_SchedulerSvc была остановлена. Запустил службу...");
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Служба GM_SchedulerSvc была остановлена. Запустил службу...");
+                Console.WriteLine(DateTime.Now + " Служба GM_SchedulerSvc была остановлена. Запустил службу...");
             }
         }
     }

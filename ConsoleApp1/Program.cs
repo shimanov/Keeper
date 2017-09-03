@@ -84,7 +84,7 @@ namespace ConsoleApp1
             Console.WriteLine("*                                                *");
             Console.WriteLine("*     Разработано МРЦ Сибирь г. Новосибирск      *");
             Console.WriteLine("*     Keeper                                     *");
-            Console.WriteLine("*     v.2.1.3.4                                  *");
+            Console.WriteLine("*     v.2.1.3.5                                  *");
             Console.WriteLine("*     Утилита для восстановления                 *");
             Console.WriteLine("*     работоспособности транспорта в ОПС         *");
             Console.WriteLine("*     Шиманов Дмитрий Анатольевич                *");
