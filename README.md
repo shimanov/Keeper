@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build Status](https://travis-ci.org/shimanov/Keeper.svg?branch=master)](https://travis-ci.org/shimanov/Keeper)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a46398a708d24053bec54deccb692176)](https://www.codacy.com/app/shimanov/Keeper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shimanov/Keeper&amp;utm_campaign=Badge_Grade)
 
 ## Приложение для перезапуска служб и выполнения хранимых процедур
 
