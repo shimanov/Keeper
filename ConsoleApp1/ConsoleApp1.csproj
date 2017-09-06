@@ -78,9 +78,11 @@
   <ItemGroup>
     <Compile Include="Classes\Base\IDeleteFolderFiles.cs" />
     <Compile Include="Classes\Base\IExecuteScript.cs" />
+    <Compile Include="Classes\Base\IProcessBar.cs" />
     <Compile Include="Classes\Base\IServicesRestart.cs" />
     <Compile Include="Classes\DeleteFolerFiles.cs" />
     <Compile Include="Classes\ExecuteScript.cs" />
+    <Compile Include="Classes\ProcessBar.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

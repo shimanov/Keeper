@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System;
 using System.Threading;
+using ConsoleApp1.Classes;
 
 namespace ConsoleApp1
 {
@@ -37,10 +38,11 @@ namespace ConsoleApp1
                 script.ScriptExport();
 
                 //спим 5 минут
-                Console.WriteLine(DateTime.Now.ToShortDateString() + "Ждем 5 минут");
+                Console.WriteLine(DateTime.Now + "Ждем 5 минут");
                 Logger.Log.Info("Ждем 5 минут");
                 Thread.Sleep(300000);
-
+                ProcessBar processBar = new ProcessBar();
+                processBar.PBar();
                 //Перезапускаем службы
                 ServicesRestart services = new ServicesRestart();
                 services.RestartGmmq();
@@ -84,7 +86,7 @@ namespace ConsoleApp1
             Console.WriteLine("*                                                *");
             Console.WriteLine("*     Разработано МРЦ Сибирь г. Новосибирск      *");
             Console.WriteLine("*     Keeper                                     *");
-            Console.WriteLine("*     v.2.1.3.5                                  *");
+            Console.WriteLine("*     v.2.1.3.6                                  *");
             Console.WriteLine("*     Утилита для восстановления                 *");
             Console.WriteLine("*     работоспособности транспорта в ОПС         *");
             Console.WriteLine("*     Шиманов Дмитрий Анатольевич                *");
@@ -92,7 +94,7 @@ namespace ConsoleApp1
             Console.WriteLine("*     LICENSE: Apache 2.0                        *");
             Console.WriteLine("*                                                *");
             Console.WriteLine(new string('*', 50));
-            Console.Title = "Keeper v.2.1.3.5";
+            Console.Title = "Keeper v.2.1.3.6";
             //Иницилизация log4net
             Logger.InitLogger();
 
