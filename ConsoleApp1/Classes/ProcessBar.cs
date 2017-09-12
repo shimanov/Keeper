@@ -14,6 +14,7 @@ namespace ConsoleApp1.Classes
             Console.WriteLine(DateTime.Now + "Службы будут перезапущены через 5 минут");
             Logger.Log.Info("Службы будут перезапущены через 5 минут");
             Console.CursorVisible = false;
+            Console.ForegroundColor = ConsoleColor.White;
             //Console.SetCursorPosition(0, 1);
             string symbol = "█";
             Console.Write(symbol);
@@ -26,6 +27,7 @@ namespace ConsoleApp1.Classes
                 }
                 Thread.Sleep(60000);
             }
+            Console.ResetColor();
         }
     }
 }
