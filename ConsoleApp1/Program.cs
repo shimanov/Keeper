@@ -83,7 +83,7 @@ namespace ConsoleApp1
             Console.WriteLine("*                                                *");
             Console.WriteLine("*     Разработано МРЦ Сибирь г. Новосибирск      *");
             Console.WriteLine("*     Keeper                                     *");
-            Console.WriteLine("*     v.2.1.3.6                                  *");
+            Console.WriteLine("*     Pre v.2.1.3.6                              *");
             Console.WriteLine("*     Утилита для восстановления                 *");
             Console.WriteLine("*     работоспособности транспорта в ОПС         *");
             Console.WriteLine("*     Шиманов Дмитрий Анатольевич                *");
@@ -91,7 +91,7 @@ namespace ConsoleApp1
             Console.WriteLine("*     LICENSE: Apache 2.0                        *");
             Console.WriteLine("*                                                *");
             Console.WriteLine(new string('*', 50));
-            Console.Title = "Keeper v.2.1.3.6";
+            Console.Title = "Keeper Pre v.2.1.3.6";
             //Иницилизация log4net
             Logger.InitLogger();
 
