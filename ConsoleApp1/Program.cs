@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System;
-using System.Threading;
 using ConsoleApp1.Classes;
 
 namespace ConsoleApp1
@@ -37,12 +36,10 @@ namespace ConsoleApp1
                 var script = new ExecuteScript();
                 script.ScriptExport();
 
-                //спим 5 минут
-                Console.WriteLine(DateTime.Now + "Ждем 5 минут");
                 Logger.Log.Info("Ждем 5 минут");
-                Thread.Sleep(300000);
                 ProcessBar processBar = new ProcessBar();
                 processBar.PBar();
+
                 //Перезапускаем службы
                 ServicesRestart services = new ServicesRestart();
                 services.RestartGmmq();

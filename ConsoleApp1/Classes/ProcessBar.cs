@@ -6,11 +6,15 @@ namespace ConsoleApp1.Classes
 {
     public class ProcessBar : IProcessBar
     {
+        /// <summary>
+        /// Отрисовка Process bar
+        /// </summary>
         public void PBar()
         {
-            Console.WriteLine("Службы будут перезапущены через 5 минут");
+            Console.WriteLine(DateTime.Now + "Службы будут перезапущены через 5 минут");
+            Logger.Log.Info("Службы будут перезапущены через 5 минут");
             Console.CursorVisible = false;
-            Console.SetCursorPosition(0, 1);
+            //Console.SetCursorPosition(0, 1);
             string symbol = "█";
             Console.Write(symbol);
 
